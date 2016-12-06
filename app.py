@@ -1,16 +1,13 @@
 from flask import Flask, render_template
-from flask_mysqldb import MySQL
+import MySQLdb
 
 app = Flask(__name__)
-app.config['MYSQL_HOST'] = '192.34.63.230'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'root321'
-app.config['MYSQL_DB'] = 'NJData'
-mysql = MySQL(app)
+
+db = MySQLdb.connect(host="localhost", user="root", passwd="root321", db="NJData")
+cur = db.cursor()
 
 @app.route("/")
 def main():
-    cur = mysql.connection.cursor()
     return render_template('index.html')
 
 @app.route("/predictions")
