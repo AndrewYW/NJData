@@ -1,34 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blob</title>
+  <title>NJData</title>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
   <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="../static/css/keen-dashboards.css" />
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
 </head>
 <body class="application">
 
   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="../">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="navbar-brand" href="./">Blob</a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-left">
-          <li><a href="https://keen.io">Home</a></li>
-          <li><a href="https://keen.io/team">Team</a></li>
-          <li><a href="https://github.com/keenlabs/dashboards/tree/gh-pages/layouts/hero-thirds">Source</a></li>
-          <li><a href="https://groups.google.com/forum/#!forum/keen-io-devs">Community</a></li><li><a href="http://stackoverflow.com/questions/tagged/keen-io?sort=newest&pageSize=15">Technical Support</a></li>
-        </ul>
+        <a class="navbar-brand" href="./">NJData</a>
       </div>
     </div>
   </div>
@@ -39,16 +23,17 @@
       <div class="col-sm-8">
         <div class="chart-wrapper">
           <div class="chart-title">
-            Cell Title Large
+            NJ County Map
           </div>
           <div class="chart-stage">
             <div id="grid-1-1">
               <img data-src="holder.js/100%x240/white/text:#grid-1-1">
-              STUFF GOES HERE
+              <img src="../static/images/NJCounties.png"/>
+
             </div>
           </div>
           <div class="chart-notes">
-            Notes about this chart 1
+            Select the Counties to display statistics
           </div>
         </div>
       </div>
@@ -58,7 +43,29 @@
             Cell Title 2
           </div>
           <div class="chart-stage">
-            <img data-src="holder.js/100%x240/white">
+            <form action="demo_form.asp" method="get">
+              <input type="checkbox" name="vehicle" value="Atlantic"> Atlantic County<br>
+              <input type="checkbox" name="vehicle" value="Bergen"> Bergen County<br>
+              <input type="checkbox" name="vehicle" value="Burlington"> Burlington County<br>
+              <input type="checkbox" name="vehicle" value="Camden"> Camden County<br>
+              <input type="checkbox" name="vehicle" value="Cape May"> Cape May County<br>
+              <input type="checkbox" name="vehicle" value="Cumberland"> Cumberland County<br>
+              <input type="checkbox" name="vehicle" value="Essex"> Essex County<br>
+              <input type="checkbox" name="vehicle" value="Gloucester"> Gloucester County<br>
+              <input type="checkbox" name="vehicle" value="Hudson"> Hudson County<br>
+              <input type="checkbox" name="vehicle" value="Hunterdon"> Hunterdon County<br>
+              <input type="checkbox" name="vehicle" value="Mercer"> Mercer County<br>
+              <input type="checkbox" name="vehicle" value="Middlesex"> Middlesex County<br>
+              <input type="checkbox" name="vehicle" value="Monmouth"> Monmouth County<br>
+              <input type="checkbox" name="vehicle" value="Morris"> Morris County<br>
+              <input type="checkbox" name="vehicle" value="Ocean"> Ocean County<br>
+              <input type="checkbox" name="vehicle" value="Passaic"> Passaic County<br>
+              <input type="checkbox" name="vehicle" value="Salem"> Salem County<br>
+              <input type="checkbox" name="vehicle" value="Somerset"> Somerset County<br>
+              <input type="checkbox" name="vehicle" value="Sussex"> Sussex County<br>
+              <input type="checkbox" name="vehicle" value="Union"> Union County<br>
+              <input type="checkbox" name="vehicle" value="Warren"> Warren County<br>
+            </form>
           </div>
           <div class="chart-notes">
             Notes about this chart
