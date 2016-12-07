@@ -13,6 +13,7 @@
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="./">NJData</a>
+        <a class="navbar-brand">Overview</a>
       </div>
     </div>
   </div>
@@ -23,49 +24,31 @@
       <div class="col-sm-8">
         <div class="chart-wrapper">
           <div class="chart-title">
-            NJ County Map
+            Overview
           </div>
           <div class="chart-stage">
             <div id="grid-1-1">
-              <img data-src="holder.js/100%x240/white/text:#grid-1-1">
-              <img src="../static/images/NJCounties.png"/>
+              <p>
+              NJData is a project covering New Jersey's presidential election voting history from 2004 to 2016.
+              While New Jersey has been historically Democratic, a variety of factors may influence voting patterns,
+              including gender, GDP, population growth, etc. We've taken a few of those
+              and made some graphs and tables for you to view.
+              </p>
 
             </div>
           </div>
           <div class="chart-notes">
-            Select the Counties to display statistics
+            Project created by Andrew Wang and Robert Fullem
           </div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="chart-wrapper">
           <div class="chart-title">
-            Cell Title 2
+            NJ County Map
           </div>
           <div class="chart-stage">
-            <form action="demo_form.asp" method="get">
-              <input type="checkbox" name="vehicle" value="Atlantic"> Atlantic County<br>
-              <input type="checkbox" name="vehicle" value="Bergen"> Bergen County<br>
-              <input type="checkbox" name="vehicle" value="Burlington"> Burlington County<br>
-              <input type="checkbox" name="vehicle" value="Camden"> Camden County<br>
-              <input type="checkbox" name="vehicle" value="Cape May"> Cape May County<br>
-              <input type="checkbox" name="vehicle" value="Cumberland"> Cumberland County<br>
-              <input type="checkbox" name="vehicle" value="Essex"> Essex County<br>
-              <input type="checkbox" name="vehicle" value="Gloucester"> Gloucester County<br>
-              <input type="checkbox" name="vehicle" value="Hudson"> Hudson County<br>
-              <input type="checkbox" name="vehicle" value="Hunterdon"> Hunterdon County<br>
-              <input type="checkbox" name="vehicle" value="Mercer"> Mercer County<br>
-              <input type="checkbox" name="vehicle" value="Middlesex"> Middlesex County<br>
-              <input type="checkbox" name="vehicle" value="Monmouth"> Monmouth County<br>
-              <input type="checkbox" name="vehicle" value="Morris"> Morris County<br>
-              <input type="checkbox" name="vehicle" value="Ocean"> Ocean County<br>
-              <input type="checkbox" name="vehicle" value="Passaic"> Passaic County<br>
-              <input type="checkbox" name="vehicle" value="Salem"> Salem County<br>
-              <input type="checkbox" name="vehicle" value="Somerset"> Somerset County<br>
-              <input type="checkbox" name="vehicle" value="Sussex"> Sussex County<br>
-              <input type="checkbox" name="vehicle" value="Union"> Union County<br>
-              <input type="checkbox" name="vehicle" value="Warren"> Warren County<br>
-            </form>
+            <img src="../static/images/NJCounties.png"/>
           </div>
           <div class="chart-notes">
             Notes about this chart
@@ -78,36 +61,43 @@
       <div class="col-sm-6 col-md-4">
         <div class="chart-wrapper">
           <div class="chart-title">
-            Cell Title 3
+            View our predictions
           </div>
           <div class="chart-stage">
-            <img data-src="holder.js/100%x120/white">
+            We generated 2016 county voting predictions through graphing our data sets from the past 3 elections.
+            <form action="./predictions">
+              <input type="submit" value="View predictions" />
+            </form>
           </div>
           <div class="chart-notes">
-            Notes about this chart
+
           </div>
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
         <div class="chart-wrapper">
           <div class="chart-title">
-            Cell Title 4
+            Margins of victory
           </div>
           <div class="chart-stage">
-            <img data-src="holder.js/100%x120/white">
+            <p>View the democratic margins of victory over the years.</p>
+            <form action="./margins">
+              <input type="submit" value="View margins" />
+            </form>
           </div>
-          <div class="chart-notes">
-            Notes about this chart
-          </div>
+
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
         <div class="chart-wrapper">
           <div class="chart-title">
-            Cell Title 5
+            Population Growth Effects
           </div>
           <div class="chart-stage">
-            <img data-src="holder.js/100%x120/white">
+            <p>View the connections between population growth in counties and how they voted in 2016.</p>
+            <form action="./popgrowth">
+              <input type="submit" value="View pop. growth trends" />
+            </form>
           </div>
           <div class="chart-notes">
             Notes about this chart
@@ -118,10 +108,13 @@
       <div class="col-sm-6 col-md-4">
         <div class="chart-wrapper">
           <div class="chart-title">
-            Cell Title 5
+            Income Growth Factors
           </div>
           <div class="chart-stage">
-            <img data-src="holder.js/100%x120/white">
+            <p>We compared county income growth over time compared to the state average from 2004 to 2012. Here's how it factors in with voting.</p>
+            <form action="./income">
+              <input type="submit" value="View income trends" />
+            </form>
           </div>
           <div class="chart-notes">
             Notes about this chart
@@ -131,26 +124,24 @@
       <div class="col-sm-6 col-md-4">
         <div class="chart-wrapper">
           <div class="chart-title">
-            Cell Title 6
+            Run your own queries!
           </div>
           <div class="chart-stage">
             <img data-src="holder.js/100%x120/white">
           </div>
           <div class="chart-notes">
-            Notes about this chart
+            It would be wise to view the schema first
           </div>
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
         <div class="chart-wrapper">
           <div class="chart-title">
-            Cell Title 7
           </div>
           <div class="chart-stage">
             <img data-src="holder.js/100%x120/white">
           </div>
           <div class="chart-notes">
-            Notes about this chart
           </div>
         </div>
       </div>
