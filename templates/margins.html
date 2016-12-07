@@ -19,7 +19,52 @@
   </div>
 
   <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Historical Vote Margins
+          </div>
+          <div class="chart-stage">
+            <table border=1>
+              <thead>
+                <td><b>County</b></td>
+                <td><b>2004 Win Margin</b></td>
+                <td><b>2008 Win Margin</b></td>
+                <td><b>2012 Win Margin</b></td>
+                <td><b>2016 Win Margin</b></td>
+              </thead>
+            {% for item in margins %}
+              <tr>
+                  <td>{{item[0]}}</td>
+                  <td>{{item[1]}}</td>
+                  <td>{{item[2]}}</td>
+                  <td>{{item[3]}}</td>
+                  <td>{{item[4]}}</td>
+                </tr>
+            {% endfor %}
+            </table>
+          </div>
+          <div class="chart-notes">
+            Note: each value is the percentage difference between Democratic and Republican voting percentages. Positive is a Democratic win, negative is a Republican win.
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            What does this mean?
+          </div>
+          <div class="chart-stage">
 
+          </div>
+          <div class="chart-notes">
+          </div>
+        </div>
+      </div>
+
+
+    </div>
   </div>
     <hr>
     <p class="small text-muted">Built with &#9829; by <a href="https://keen.io">Keen IO</a></p>

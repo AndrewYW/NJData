@@ -19,7 +19,75 @@
   </div>
 
   <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Counties with income growth above the state average
+          </div>
+          <div class="chart-stage">
+            <table border=1>
+              <thead>
+                <td><b>County</b></td>
+                <td><b>Winner</b></td>
+                <td><b>Percent PerCapita Inc. Growth</b></td>
+              </thead>
+            {% for item in highincome %}
+              <tr>
+                  <td>{{item[0]}}</td>
+                  <td>{{item[1]}}</td>
+                  <td>{{item[2]}}</td>
+                </tr>
+            {% endfor %}
+            </table>
+          </div>
+          <div class="chart-notes">
 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Counties below state average income growth
+          </div>
+          <div class="chart-stage">
+            <table border=1>
+              <thead>
+                <td><b>County</b></td>
+                <td><b>Winner</b></td>
+                <td><b>Percent PerCapita Inc. Growth</b></td>
+              </thead>
+            {% for item in lowincome %}
+              <tr>
+                  <td>{{item[0]}}</td>
+                  <td>{{item[1]}}</td>
+                  <td>{{item[2]}}</td>
+                </tr>
+            {% endfor %}
+            </table>
+          </div>
+          <div class="chart-notes">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            What does this mean?
+          </div>
+          <div class="chart-stage">
+
+          </div>
+          <div class="chart-notes">
+          </div>
+        </div>
+      </div>
+
+
+    </div>
   </div>
     <hr>
     <p class="small text-muted">Built with &#9829; by <a href="https://keen.io">Keen IO</a></p>
